@@ -10,8 +10,8 @@ func main() {
 	fmt.Println("Введите размер шахматной доски:")
 	fmt.Fscan(os.Stdin, &size)
 
-	if size <= 0 || size%2 != 0 || size < 20 {
-		fmt.Println("Размер доски должен быть больше нуля и меньше 20 и четным числом !!!")
+	if size <= 0 {
+		fmt.Println("Размер доски должен быть больше нуля!!!")
 	} else {
 		for i := 1; i <= size; i++ {
 			for a := 0; a <= size; a++ {
